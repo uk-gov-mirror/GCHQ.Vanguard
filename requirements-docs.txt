@@ -27,7 +27,7 @@ bleach==6.2.0
     # via nbconvert
 certifi==2025.8.3
     # via requests
-cffi==1.17.1 ; implementation_name == 'pypy'
+cffi==2.0.0 ; implementation_name == 'pypy'
     # via pyzmq
 charset-normalizer==3.4.3
     # via requests
@@ -127,7 +127,7 @@ joblib==1.5.2
     # via scikit-learn
 jsonschema==4.25.1
     # via nbformat
-jsonschema-specifications==2025.4.1
+jsonschema-specifications==2025.9.1
     # via jsonschema
 jupyter-client==8.6.3
     # via
@@ -212,7 +212,7 @@ numpy==2.2.6 ; python_full_version == '3.10.*'
     #   scikit-learn
     #   scipy
     #   vanguard-gp
-numpy==2.3.2 ; python_full_version >= '3.11'
+numpy==2.3.3 ; python_full_version >= '3.11'
     # via
     #   contourpy
     #   matplotlib
@@ -292,7 +292,7 @@ pybtex==0.25.1
     #   vanguard-gp
 pybtex-docutils==1.0.3
     # via sphinxcontrib-bibtex
-pycparser==2.22 ; implementation_name == 'pypy'
+pycparser==2.23 ; implementation_name == 'pypy'
     # via cffi
 pygments==2.19.2
     # via
@@ -302,7 +302,7 @@ pygments==2.19.2
     #   ipython-pygments-lexers
     #   nbconvert
     #   sphinx
-pyparsing==3.2.3
+pyparsing==3.2.4
     # via
     #   bibtexparser
     #   matplotlib
@@ -317,7 +317,7 @@ pywin32==311 ; platform_python_implementation != 'PyPy' and sys_platform == 'win
     # via jupyter-core
 pyyaml==6.0.2
     # via pybtex
-pyzmq==27.0.2
+pyzmq==27.1.0
     # via
     #   ipykernel
     #   jupyter-client
@@ -335,7 +335,7 @@ scikit-learn==1.6.1 ; python_full_version < '3.10'
     # via
     #   gpytorch
     #   vanguard-gp
-scikit-learn==1.7.1 ; python_full_version >= '3.10'
+scikit-learn==1.7.2 ; python_full_version >= '3.10'
     # via
     #   gpytorch
     #   vanguard-gp
@@ -351,7 +351,7 @@ scipy==1.15.3 ; python_full_version == '3.10.*'
     #   linear-operator
     #   scikit-learn
     #   vanguard-gp
-scipy==1.16.1 ; python_full_version >= '3.11'
+scipy==1.16.2 ; python_full_version >= '3.11'
     # via
     #   gpytorch
     #   linear-operator
