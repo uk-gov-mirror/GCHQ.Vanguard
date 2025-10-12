@@ -11,7 +11,7 @@ appnope==0.1.4 ; (python_full_version < '3.13' and sys_platform == 'darwin') or 
     # via ipykernel
 asttokens==3.0.0
     # via stack-data
-attrs==25.3.0
+attrs==25.4.0
     # via
     #   jsonschema
     #   referencing
@@ -25,7 +25,7 @@ bibtexparser==1.4.3
     # via vanguard-gp
 bleach==6.2.0
     # via nbconvert
-certifi==2025.8.3
+certifi==2025.10.5
     # via requests
 cffi==2.0.0 ; implementation_name == 'pypy'
     # via pyzmq
@@ -64,7 +64,9 @@ executing==2.2.1
     # via stack-data
 fastjsonschema==2.21.2
     # via nbformat
-filelock==3.19.1
+filelock==3.19.1 ; python_full_version < '3.10'
+    # via torch
+filelock==3.20.0 ; python_full_version >= '3.10'
     # via torch
 fonttools==4.60.1
     # via matplotlib
@@ -74,7 +76,7 @@ furo==2025.9.25
     # via vanguard-gp
 gpytorch==1.13 ; python_full_version < '3.10'
     # via vanguard-gp
-gpytorch==1.14 ; python_full_version >= '3.10'
+gpytorch==1.14.1 ; python_full_version >= '3.10'
     # via vanguard-gp
 idna==3.10
     # via requests
@@ -160,7 +162,7 @@ markupsafe==3.0.3
     #   nbconvert
 matplotlib==3.9.4 ; python_full_version < '3.10'
     # via vanguard-gp
-matplotlib==3.10.6 ; python_full_version >= '3.10'
+matplotlib==3.10.7 ; python_full_version >= '3.10'
     # via vanguard-gp
 matplotlib-inline==0.1.7
     # via
@@ -275,7 +277,9 @@ pillow==11.3.0
     # via
     #   matplotlib
     #   vanguard-gp
-platformdirs==4.4.0
+platformdirs==4.4.0 ; python_full_version < '3.10'
+    # via jupyter-core
+platformdirs==4.5.0 ; python_full_version >= '3.10'
     # via jupyter-core
 prompt-toolkit==3.0.52
     # via ipython
@@ -412,7 +416,7 @@ threadpoolctl==3.6.0
     # via scikit-learn
 tinycss2==1.4.0
     # via bleach
-tomli==2.2.1 ; python_full_version < '3.11'
+tomli==2.3.0 ; python_full_version < '3.11'
     # via sphinx
 torch==2.8.0
     # via
