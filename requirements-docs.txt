@@ -23,7 +23,9 @@ beautifulsoup4==4.14.2
     #   nbconvert
 bibtexparser==1.4.3
     # via vanguard-gp
-bleach==6.2.0
+bleach==6.2.0 ; python_full_version < '3.10'
+    # via nbconvert
+bleach==6.3.0 ; python_full_version >= '3.10'
     # via nbconvert
 certifi==2025.10.5
     # via requests
@@ -70,7 +72,7 @@ filelock==3.20.0 ; python_full_version >= '3.10'
     # via torch
 fonttools==4.60.1
     # via matplotlib
-fsspec==2025.9.0
+fsspec==2025.10.0
     # via torch
 furo==2025.9.25
     # via vanguard-gp
@@ -95,7 +97,7 @@ importlib-resources==6.5.2 ; python_full_version < '3.10'
     # via matplotlib
 ipykernel==6.31.0 ; python_full_version < '3.10'
     # via vanguard-gp
-ipykernel==7.0.1 ; python_full_version >= '3.10'
+ipykernel==7.1.0 ; python_full_version >= '3.10'
     # via vanguard-gp
 ipython==8.18.1 ; python_full_version < '3.10'
     # via
@@ -380,7 +382,7 @@ scipy==1.15.3 ; python_full_version == '3.10.*'
     #   linear-operator
     #   scikit-learn
     #   vanguard-gp
-scipy==1.16.2 ; python_full_version >= '3.11'
+scipy==1.16.3 ; python_full_version >= '3.11'
     # via
     #   gpytorch
     #   linear-operator
