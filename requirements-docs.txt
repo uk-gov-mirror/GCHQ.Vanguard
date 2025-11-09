@@ -107,7 +107,7 @@ ipython==8.37.0 ; python_full_version == '3.10.*'
     # via
     #   ipykernel
     #   vanguard-gp
-ipython==9.6.0 ; python_full_version >= '3.11'
+ipython==9.7.0 ; python_full_version >= '3.11'
     # via
     #   ipykernel
     #   vanguard-gp
@@ -159,7 +159,7 @@ kiwisolver==1.4.7 ; python_full_version < '3.10'
     # via matplotlib
 kiwisolver==1.4.9 ; python_full_version >= '3.10'
     # via matplotlib
-kmedoids==0.5.3.1
+kmedoids==0.5.4
     # via vanguard-gp
 latexcodec==3.0.1
     # via pybtex
@@ -302,7 +302,7 @@ platformdirs==4.5.0 ; python_full_version >= '3.10'
     # via jupyter-core
 prompt-toolkit==3.0.52
     # via ipython
-psutil==7.1.2
+psutil==7.1.3
     # via ipykernel
 ptyprocess==0.7.0 ; (python_full_version < '3.10' and sys_platform == 'emscripten') or (sys_platform != 'emscripten' and sys_platform != 'win32')
     # via pexpect
