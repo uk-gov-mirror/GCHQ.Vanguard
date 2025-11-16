@@ -9,7 +9,7 @@ alabaster==1.0.0 ; python_full_version >= '3.10'
     # via sphinx
 appnope==0.1.4 ; (python_full_version < '3.13' and sys_platform == 'darwin') or (os_name != 'nt' and sys_platform == 'darwin')
     # via ipykernel
-asttokens==3.0.0
+asttokens==3.0.1
     # via stack-data
 attrs==25.4.0
     # via
@@ -27,7 +27,7 @@ bleach==6.2.0 ; python_full_version < '3.10'
     # via nbconvert
 bleach==6.3.0 ; python_full_version >= '3.10'
     # via nbconvert
-certifi==2025.10.5
+certifi==2025.11.12
     # via requests
 cffi==2.0.0 ; implementation_name == 'pypy'
     # via pyzmq
@@ -449,7 +449,7 @@ torch==2.8.0 ; python_full_version < '3.10'
     # via
     #   linear-operator
     #   vanguard-gp
-torch==2.9.0 ; python_full_version >= '3.10'
+torch==2.9.1 ; python_full_version >= '3.10'
     # via
     #   linear-operator
     #   vanguard-gp
@@ -472,7 +472,7 @@ traitlets==5.14.3
     #   nbsphinx
 triton==3.4.0 ; python_full_version < '3.10' and platform_machine == 'x86_64' and sys_platform == 'linux'
     # via torch
-triton==3.5.0 ; (python_full_version >= '3.10' and python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and platform_machine == 'x86_64' and sys_platform == 'linux')
+triton==3.5.1 ; (python_full_version >= '3.10' and python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and platform_machine == 'x86_64' and sys_platform == 'linux')
     # via torch
 typeguard==4.4.4 ; python_full_version < '3.10'
     # via jaxtyping
