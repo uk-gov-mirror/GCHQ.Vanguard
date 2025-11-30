@@ -70,7 +70,9 @@ filelock==3.19.1 ; python_full_version < '3.10'
     # via torch
 filelock==3.20.0 ; python_full_version >= '3.10'
     # via torch
-fonttools==4.60.1
+fonttools==4.60.1 ; python_full_version < '3.10'
+    # via matplotlib
+fonttools==4.61.0 ; python_full_version >= '3.10'
     # via matplotlib
 fsspec==2025.10.0
     # via torch
@@ -78,7 +80,7 @@ furo==2025.9.25
     # via vanguard-gp
 gpytorch==1.13 ; python_full_version < '3.10'
     # via vanguard-gp
-gpytorch==1.14.2 ; python_full_version >= '3.10'
+gpytorch==1.14.3 ; python_full_version >= '3.10'
     # via vanguard-gp
 idna==3.11
     # via requests
@@ -198,7 +200,7 @@ nbformat==5.10.4
     #   nbconvert
     #   nbsphinx
     #   vanguard-gp
-nbsphinx==0.9.7
+nbsphinx==0.9.8
     # via vanguard-gp
 nest-asyncio==1.6.0
     # via ipykernel
@@ -206,7 +208,7 @@ networkx==3.2.1 ; python_full_version < '3.10'
     # via torch
 networkx==3.4.2 ; python_full_version == '3.10.*'
     # via torch
-networkx==3.5 ; python_full_version >= '3.11'
+networkx==3.6 ; python_full_version >= '3.11'
     # via torch
 numpy==2.0.2 ; python_full_version < '3.10'
     # via
