@@ -17,7 +17,7 @@ attrs==25.4.0
     #   referencing
 babel==2.17.0
     # via sphinx
-beautifulsoup4==4.14.2
+beautifulsoup4==4.14.3
     # via
     #   furo
     #   nbconvert
@@ -74,7 +74,9 @@ fonttools==4.60.1 ; python_full_version < '3.10'
     # via matplotlib
 fonttools==4.61.0 ; python_full_version >= '3.10'
     # via matplotlib
-fsspec==2025.10.0
+fsspec==2025.10.0 ; python_full_version < '3.10'
+    # via torch
+fsspec==2025.12.0 ; python_full_version >= '3.10'
     # via torch
 furo==2025.9.25
     # via vanguard-gp
@@ -109,7 +111,7 @@ ipython==8.37.0 ; python_full_version == '3.10.*'
     # via
     #   ipykernel
     #   vanguard-gp
-ipython==9.7.0 ; python_full_version >= '3.11'
+ipython==9.8.0 ; python_full_version >= '3.11'
     # via
     #   ipykernel
     #   vanguard-gp
@@ -300,7 +302,7 @@ pillow==12.0.0 ; python_full_version >= '3.10'
     #   vanguard-gp
 platformdirs==4.4.0 ; python_full_version < '3.10'
     # via jupyter-core
-platformdirs==4.5.0 ; python_full_version >= '3.10'
+platformdirs==4.5.1 ; python_full_version >= '3.10'
     # via jupyter-core
 prompt-toolkit==3.0.52
     # via ipython
@@ -360,7 +362,7 @@ rpds-py==0.27.1 ; python_full_version < '3.10'
     # via
     #   jsonschema
     #   referencing
-rpds-py==0.29.0 ; python_full_version >= '3.10'
+rpds-py==0.30.0 ; python_full_version >= '3.10'
     # via
     #   jsonschema
     #   referencing
@@ -491,7 +493,7 @@ typing-extensions==4.15.0
     #   vanguard-gp
 tzdata==2025.2
     # via pandas
-urllib3==2.5.0
+urllib3==2.6.0
     # via
     #   requests
     #   vanguard-gp
