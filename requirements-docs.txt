@@ -48,7 +48,7 @@ contourpy==1.3.3 ; python_full_version >= '3.11'
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
-debugpy==1.8.17
+debugpy==1.8.18
     # via ipykernel
 decorator==5.2.1
     # via ipython
@@ -70,9 +70,9 @@ filelock==3.19.1 ; python_full_version < '3.10'
     # via torch
 filelock==3.20.0 ; python_full_version >= '3.10'
     # via torch
-fonttools==4.60.1 ; python_full_version < '3.10'
+fonttools==4.60.2 ; python_full_version < '3.10'
     # via matplotlib
-fonttools==4.61.0 ; python_full_version >= '3.10'
+fonttools==4.61.1 ; python_full_version >= '3.10'
     # via matplotlib
 fsspec==2025.10.0 ; python_full_version < '3.10'
     # via torch
@@ -139,7 +139,11 @@ jsonschema==4.25.1
     # via nbformat
 jsonschema-specifications==2025.9.1
     # via jsonschema
-jupyter-client==8.6.3
+jupyter-client==8.6.3 ; python_full_version < '3.10'
+    # via
+    #   ipykernel
+    #   nbclient
+jupyter-client==8.7.0 ; python_full_version >= '3.10'
     # via
     #   ipykernel
     #   nbclient
@@ -177,7 +181,7 @@ markupsafe==3.0.3
     #   nbconvert
 matplotlib==3.9.4 ; python_full_version < '3.10'
     # via vanguard-gp
-matplotlib==3.10.7 ; python_full_version >= '3.10'
+matplotlib==3.10.8 ; python_full_version >= '3.10'
     # via vanguard-gp
 matplotlib-inline==0.2.1
     # via
@@ -210,7 +214,7 @@ networkx==3.2.1 ; python_full_version < '3.10'
     # via torch
 networkx==3.4.2 ; python_full_version == '3.10.*'
     # via torch
-networkx==3.6 ; python_full_version >= '3.11'
+networkx==3.6.1 ; python_full_version >= '3.11'
     # via torch
 numpy==2.0.2 ; python_full_version < '3.10'
     # via
@@ -370,7 +374,11 @@ scikit-learn==1.6.1 ; python_full_version < '3.10'
     # via
     #   gpytorch
     #   vanguard-gp
-scikit-learn==1.7.2 ; python_full_version >= '3.10'
+scikit-learn==1.7.2 ; python_full_version == '3.10.*'
+    # via
+    #   gpytorch
+    #   vanguard-gp
+scikit-learn==1.8.0 ; python_full_version >= '3.11'
     # via
     #   gpytorch
     #   vanguard-gp
@@ -457,7 +465,7 @@ torch==2.9.1 ; python_full_version >= '3.10'
     # via
     #   linear-operator
     #   vanguard-gp
-tornado==6.5.2
+tornado==6.5.3
     # via
     #   ipykernel
     #   jupyter-client
@@ -491,9 +499,9 @@ typing-extensions==4.15.0
     #   torch
     #   typeguard
     #   vanguard-gp
-tzdata==2025.2
+tzdata==2025.3
     # via pandas
-urllib3==2.6.0
+urllib3==2.6.2
     # via
     #   requests
     #   vanguard-gp
