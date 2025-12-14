@@ -58,7 +58,7 @@ repos:
       # No tabs, only spaces
       - id: forbid-tabs
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.14.8
+    rev: v0.14.9
     hooks:
       # Run the formatter.
       - id: ruff-format
@@ -72,7 +72,7 @@ repos:
         # the slow pylint hook
         fail_fast: true
   - repo: https://github.com/regebro/pyroma
-    rev: "5.0"
+    rev: "5.0.1"
     hooks:
       # Ensure that necessary package information is provided
       - id: pyroma
