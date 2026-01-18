@@ -88,7 +88,7 @@ furo==2025.12.19
     # via vanguard-gp
 gpytorch==1.13 ; python_full_version < '3.10'
     # via vanguard-gp
-gpytorch==1.14.3 ; python_full_version >= '3.10'
+gpytorch==1.15.1 ; python_full_version >= '3.10'
     # via vanguard-gp
 idna==3.11
     # via requests
@@ -487,7 +487,7 @@ threadpoolctl==3.6.0
     # via scikit-learn
 tinycss2==1.4.0
     # via bleach
-tomli==2.3.0 ; python_full_version < '3.11'
+tomli==2.4.0 ; python_full_version < '3.11'
     # via sphinx
 torch==2.8.0 ; python_full_version < '3.10'
     # via
