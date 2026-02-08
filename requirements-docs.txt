@@ -15,7 +15,7 @@ attrs==25.4.0
     # via
     #   jsonschema
     #   referencing
-babel==2.17.0
+babel==2.18.0
     # via sphinx
 beautifulsoup4==4.14.3
     # via
@@ -86,7 +86,7 @@ fonttools==4.61.1 ; python_full_version >= '3.10'
     # via matplotlib
 fsspec==2025.10.0 ; python_full_version < '3.10'
     # via torch
-fsspec==2026.1.0 ; python_full_version >= '3.10'
+fsspec==2026.2.0 ; python_full_version >= '3.10'
     # via torch
 furo==2025.12.19
     # via vanguard-gp
@@ -111,7 +111,7 @@ importlib-resources==6.5.2 ; python_full_version < '3.10'
     # via matplotlib
 ipykernel==6.31.0 ; python_full_version < '3.10'
     # via vanguard-gp
-ipykernel==7.1.0 ; python_full_version >= '3.10'
+ipykernel==7.2.0 ; python_full_version >= '3.10'
     # via vanguard-gp
 ipython==8.18.1 ; python_full_version < '3.10'
     # via
@@ -121,7 +121,7 @@ ipython==8.38.0 ; python_full_version == '3.10.*'
     # via
     #   ipykernel
     #   vanguard-gp
-ipython==9.9.0 ; python_full_version >= '3.11'
+ipython==9.10.0 ; python_full_version >= '3.11'
     # via
     #   ipykernel
     #   vanguard-gp
@@ -420,7 +420,7 @@ scipy==1.17.0 ; python_full_version >= '3.11'
     #   linear-operator
     #   scikit-learn
     #   vanguard-gp
-setuptools==80.10.2 ; python_full_version >= '3.12' or (python_full_version < '3.10' and platform_machine == 'x86_64' and sys_platform == 'linux')
+setuptools==81.0.0 ; python_full_version >= '3.12' or (python_full_version < '3.10' and platform_machine == 'x86_64' and sys_platform == 'linux')
     # via
     #   torch
     #   triton
@@ -509,7 +509,7 @@ tornado==6.5.4
     # via
     #   ipykernel
     #   jupyter-client
-tqdm==4.67.2
+tqdm==4.67.3
     # via vanguard-gp
 traitlets==5.14.3
     # via
@@ -547,7 +547,7 @@ urllib3==2.6.3
     #   vanguard-gp
 wadler-lindig==0.1.7 ; python_full_version >= '3.10'
     # via jaxtyping
-wcwidth==0.5.3
+wcwidth==0.6.0
     # via prompt-toolkit
 webencodings==0.5.1
     # via
