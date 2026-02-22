@@ -78,7 +78,7 @@ fastjsonschema==2.21.2
     # via nbformat
 filelock==3.19.1 ; python_full_version < '3.10'
     # via torch
-filelock==3.24.0 ; python_full_version >= '3.10'
+filelock==3.24.3 ; python_full_version >= '3.10'
     # via torch
 fonttools==4.60.2 ; python_full_version < '3.10'
     # via matplotlib
@@ -135,7 +135,7 @@ jaxtyping==0.3.7 ; python_full_version == '3.10.*'
     # via
     #   gpytorch
     #   linear-operator
-jaxtyping==0.3.8 ; python_full_version >= '3.11'
+jaxtyping==0.3.9 ; python_full_version >= '3.11'
     # via
     #   gpytorch
     #   linear-operator
@@ -308,7 +308,7 @@ packaging==26.0
     #   sphinx
 pandas==2.3.3 ; python_full_version < '3.11'
     # via vanguard-gp
-pandas==3.0.0 ; python_full_version >= '3.11'
+pandas==3.0.1 ; python_full_version >= '3.11'
     # via vanguard-gp
 pandocfilters==1.5.1
     # via nbconvert
@@ -326,7 +326,7 @@ pillow==12.1.1 ; python_full_version >= '3.10'
     #   vanguard-gp
 platformdirs==4.4.0 ; python_full_version < '3.10'
     # via jupyter-core
-platformdirs==4.9.1 ; python_full_version >= '3.10'
+platformdirs==4.9.2 ; python_full_version >= '3.10'
     # via jupyter-core
 prompt-toolkit==3.0.52
     # via ipython
@@ -473,7 +473,7 @@ sphinx-autodoc-typehints==3.0.1 ; python_full_version == '3.10.*'
     # via vanguard-gp
 sphinx-autodoc-typehints==3.6.1 ; python_full_version == '3.11.*'
     # via vanguard-gp
-sphinx-autodoc-typehints==3.6.2 ; python_full_version >= '3.12'
+sphinx-autodoc-typehints==3.6.3 ; python_full_version >= '3.12'
     # via vanguard-gp
 sphinx-basic-ng==1.0.0b2
     # via furo
@@ -530,7 +530,7 @@ triton==3.4.0 ; python_full_version < '3.10' and platform_machine == 'x86_64' an
     # via torch
 triton==3.6.0 ; (python_full_version >= '3.10' and python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and platform_machine == 'x86_64' and sys_platform == 'linux')
     # via torch
-typeguard==4.5.0 ; python_full_version < '3.10'
+typeguard==4.5.1 ; python_full_version < '3.10'
     # via jaxtyping
 typing-extensions==4.15.0
     # via
