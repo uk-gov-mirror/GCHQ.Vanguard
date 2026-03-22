@@ -11,7 +11,7 @@ appnope==0.1.4 ; (python_full_version < '3.13' and sys_platform == 'darwin') or 
     # via ipykernel
 asttokens==3.0.1
     # via stack-data
-attrs==25.4.0
+attrs==26.1.0
     # via
     #   jsonschema
     #   referencing
@@ -31,7 +31,7 @@ certifi==2026.2.25
     # via requests
 cffi==2.0.0 ; implementation_name == 'pypy'
     # via pyzmq
-charset-normalizer==3.4.5
+charset-normalizer==3.4.6
     # via requests
 colorama==0.4.6 ; sys_platform == 'win32'
     # via
@@ -48,7 +48,7 @@ contourpy==1.3.3 ; python_full_version >= '3.11'
     # via matplotlib
 cuda-bindings==12.9.4 ; (python_full_version >= '3.10' and python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and platform_machine == 'x86_64' and sys_platform == 'linux')
     # via torch
-cuda-pathfinder==1.4.2 ; (python_full_version >= '3.10' and python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and platform_machine == 'x86_64' and sys_platform == 'linux')
+cuda-pathfinder==1.4.3 ; (python_full_version >= '3.10' and python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and platform_machine == 'x86_64' and sys_platform == 'linux')
     # via cuda-bindings
 cycler==0.12.1
     # via matplotlib
@@ -471,7 +471,7 @@ sphinx-autodoc-typehints==3.0.1 ; python_full_version == '3.10.*'
     # via vanguard-gp
 sphinx-autodoc-typehints==3.6.1 ; python_full_version == '3.11.*'
     # via vanguard-gp
-sphinx-autodoc-typehints==3.9.8 ; python_full_version >= '3.12'
+sphinx-autodoc-typehints==3.9.9 ; python_full_version >= '3.12'
     # via vanguard-gp
 sphinx-basic-ng==1.0.0b2
     # via furo
