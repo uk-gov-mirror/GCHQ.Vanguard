@@ -48,7 +48,7 @@ contourpy==1.3.3 ; python_full_version >= '3.11'
     # via matplotlib
 cuda-bindings==13.2.0 ; (python_full_version >= '3.10' and python_full_version < '3.13' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and sys_platform == 'linux')
     # via torch
-cuda-pathfinder==1.5.1 ; (python_full_version >= '3.10' and python_full_version < '3.13' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and sys_platform == 'linux')
+cuda-pathfinder==1.5.2 ; (python_full_version >= '3.10' and python_full_version < '3.13' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and sys_platform == 'linux')
     # via cuda-bindings
 cuda-toolkit==13.0.2 ; (python_full_version >= '3.10' and python_full_version < '3.13' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and sys_platform == 'linux')
     # via torch
@@ -214,7 +214,7 @@ nbclient==0.10.2 ; python_full_version < '3.10'
     # via nbconvert
 nbclient==0.10.4 ; python_full_version >= '3.10'
     # via nbconvert
-nbconvert==7.17.0
+nbconvert==7.17.1
     # via
     #   nbsphinx
     #   vanguard-gp
@@ -361,7 +361,7 @@ pillow==12.2.0 ; python_full_version >= '3.10'
     #   vanguard-gp
 platformdirs==4.4.0 ; python_full_version < '3.10'
     # via jupyter-core
-platformdirs==4.9.4 ; python_full_version >= '3.10'
+platformdirs==4.9.6 ; python_full_version >= '3.10'
     # via jupyter-core
 prompt-toolkit==3.0.52
     # via ipython
@@ -510,7 +510,7 @@ sphinx-autodoc-typehints==3.0.1 ; python_full_version == '3.10.*'
     # via vanguard-gp
 sphinx-autodoc-typehints==3.6.1 ; python_full_version == '3.11.*'
     # via vanguard-gp
-sphinx-autodoc-typehints==3.9.11 ; python_full_version >= '3.12'
+sphinx-autodoc-typehints==3.10.0 ; python_full_version >= '3.12'
     # via vanguard-gp
 sphinx-basic-ng==1.0.0b2
     # via furo
