@@ -27,7 +27,7 @@ bleach==6.2.0 ; python_full_version < '3.10'
     # via nbconvert
 bleach==6.3.0 ; python_full_version >= '3.10'
     # via nbconvert
-certifi==2026.2.25
+certifi==2026.4.22
     # via requests
 cffi==2.0.0 ; implementation_name == 'pypy'
     # via pyzmq
@@ -80,7 +80,7 @@ fastjsonschema==2.21.2
     # via nbformat
 filelock==3.19.1 ; python_full_version < '3.10'
     # via torch
-filelock==3.28.0 ; python_full_version >= '3.10'
+filelock==3.29.0 ; python_full_version >= '3.10'
     # via torch
 fonttools==4.60.2 ; python_full_version < '3.10'
     # via matplotlib
@@ -96,7 +96,7 @@ gpytorch==1.13 ; python_full_version < '3.10'
     # via vanguard-gp
 gpytorch==1.15.2 ; python_full_version >= '3.10'
     # via vanguard-gp
-idna==3.11
+idna==3.13
     # via requests
 imagesize==1.5.0 ; python_full_version < '3.10'
     # via sphinx
@@ -125,11 +125,7 @@ ipython==8.39.0 ; python_full_version == '3.10.*'
     # via
     #   ipykernel
     #   vanguard-gp
-ipython==9.10.1 ; python_full_version == '3.11.*'
-    # via
-    #   ipykernel
-    #   vanguard-gp
-ipython==9.12.0 ; python_full_version >= '3.12'
+ipython==9.13.0 ; python_full_version >= '3.11'
     # via
     #   ipykernel
     #   vanguard-gp
@@ -197,7 +193,7 @@ markupsafe==3.0.3
     #   nbconvert
 matplotlib==3.9.4 ; python_full_version < '3.10'
     # via vanguard-gp
-matplotlib==3.10.8 ; python_full_version >= '3.10'
+matplotlib==3.10.9 ; python_full_version >= '3.10'
     # via vanguard-gp
 matplotlib-inline==0.2.1
     # via
@@ -335,7 +331,7 @@ nvidia-nvtx==13.0.85 ; (python_full_version >= '3.10' and python_full_version < 
     # via cuda-toolkit
 nvidia-nvtx-cu12==12.8.90 ; python_full_version < '3.10' and platform_machine == 'x86_64' and sys_platform == 'linux'
     # via torch
-packaging==26.1
+packaging==26.2
     # via
     #   ipykernel
     #   matplotlib
@@ -366,7 +362,9 @@ platformdirs==4.9.6 ; python_full_version >= '3.10'
 prompt-toolkit==3.0.52
     # via ipython
 psutil==7.2.2
-    # via ipykernel
+    # via
+    #   ipykernel
+    #   ipython
 ptyprocess==0.7.0 ; (python_full_version < '3.10' and sys_platform == 'emscripten') or (sys_platform != 'emscripten' and sys_platform != 'win32')
     # via pexpect
 pure-eval==0.2.3
@@ -580,7 +578,7 @@ typing-extensions==4.15.0
     #   torch
     #   typeguard
     #   vanguard-gp
-tzdata==2026.1 ; python_full_version < '3.11' or sys_platform == 'emscripten' or sys_platform == 'win32'
+tzdata==2026.2 ; python_full_version < '3.11' or sys_platform == 'emscripten' or sys_platform == 'win32'
     # via pandas
 urllib3==2.6.3
     # via
