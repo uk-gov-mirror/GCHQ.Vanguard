@@ -17,7 +17,7 @@ attrs==26.1.0
     #   referencing
 babel==2.18.0
     # via sphinx
-beautifulsoup4==4.14.3
+beautifulsoup4==4.15.0
     # via
     #   furo
     #   nbconvert
@@ -80,7 +80,7 @@ fastjsonschema==2.21.2
     # via nbformat
 filelock==3.19.1 ; python_full_version < '3.10'
     # via torch
-filelock==3.29.1 ; python_full_version >= '3.10'
+filelock==3.29.4 ; python_full_version >= '3.10'
     # via torch
 fonttools==4.60.2 ; python_full_version < '3.10'
     # via matplotlib
@@ -115,7 +115,7 @@ importlib-resources==6.5.2 ; python_full_version < '3.10'
     # via matplotlib
 ipykernel==6.31.0 ; python_full_version < '3.10'
     # via vanguard-gp
-ipykernel==7.2.0 ; python_full_version >= '3.10'
+ipykernel==7.3.0 ; python_full_version >= '3.10'
     # via vanguard-gp
 ipython==8.18.1 ; python_full_version < '3.10'
     # via
@@ -157,7 +157,7 @@ jupyter-client==8.6.3 ; python_full_version < '3.10'
     # via
     #   ipykernel
     #   nbclient
-jupyter-client==8.9.0 ; python_full_version >= '3.10'
+jupyter-client==8.9.1 ; python_full_version >= '3.10'
     # via
     #   ipykernel
     #   nbclient
@@ -195,7 +195,9 @@ markupsafe==3.0.3
     #   nbconvert
 matplotlib==3.9.4 ; python_full_version < '3.10'
     # via vanguard-gp
-matplotlib==3.10.9 ; python_full_version >= '3.10'
+matplotlib==3.10.9 ; python_full_version == '3.10.*'
+    # via vanguard-gp
+matplotlib==3.11.0 ; python_full_version >= '3.11'
     # via vanguard-gp
 matplotlib-inline==0.2.2
     # via
@@ -226,7 +228,9 @@ nbformat==5.10.4
     #   vanguard-gp
 nbsphinx==0.9.8
     # via vanguard-gp
-nest-asyncio==1.6.0
+nest-asyncio==1.6.0 ; python_full_version < '3.10'
+    # via ipykernel
+nest-asyncio2==1.7.2 ; python_full_version >= '3.10'
     # via ipykernel
 networkx==3.2.1 ; python_full_version < '3.10'
     # via torch
@@ -518,7 +522,7 @@ sphinx-autodoc-typehints==3.0.1 ; python_full_version == '3.10.*'
     # via vanguard-gp
 sphinx-autodoc-typehints==3.6.1 ; python_full_version == '3.11.*'
     # via vanguard-gp
-sphinx-autodoc-typehints==3.10.5 ; python_full_version >= '3.12'
+sphinx-autodoc-typehints==3.11.0 ; python_full_version >= '3.12'
     # via vanguard-gp
 sphinx-basic-ng==1.0.0b2
     # via furo
@@ -558,11 +562,11 @@ torch==2.12.0 ; python_full_version >= '3.10'
     # via
     #   linear-operator
     #   vanguard-gp
-tornado==6.5.6
+tornado==6.5.7
     # via
     #   ipykernel
     #   jupyter-client
-tqdm==4.68.1
+tqdm==4.68.2
     # via vanguard-gp
 traitlets==5.15.1
     # via
@@ -603,7 +607,7 @@ urllib3==2.7.0 ; python_full_version >= '3.10'
     # via
     #   requests
     #   vanguard-gp
-wcwidth==0.8.0
+wcwidth==0.8.1
     # via prompt-toolkit
 webencodings==0.5.1
     # via
