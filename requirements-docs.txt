@@ -27,7 +27,7 @@ bleach==6.2.0 ; python_full_version < '3.10'
     # via nbconvert
 bleach==6.4.0 ; python_full_version >= '3.10'
     # via nbconvert
-certifi==2026.5.20
+certifi==2026.6.17
     # via requests
 cffi==2.0.0 ; implementation_name == 'pypy'
     # via pyzmq
@@ -88,7 +88,7 @@ fonttools==4.63.0 ; python_full_version >= '3.10'
     # via matplotlib
 fsspec==2025.10.0 ; python_full_version < '3.10'
     # via torch
-fsspec==2026.4.0 ; python_full_version >= '3.10'
+fsspec==2026.6.0 ; python_full_version >= '3.10'
     # via torch
 furo==2025.12.19
     # via vanguard-gp
@@ -467,7 +467,13 @@ scipy==1.15.3 ; python_full_version == '3.10.*'
     #   linear-operator
     #   scikit-learn
     #   vanguard-gp
-scipy==1.17.1 ; python_full_version >= '3.11'
+scipy==1.17.1 ; python_full_version == '3.11.*'
+    # via
+    #   gpytorch
+    #   linear-operator
+    #   scikit-learn
+    #   vanguard-gp
+scipy==1.18.0 ; python_full_version >= '3.12'
     # via
     #   gpytorch
     #   linear-operator
@@ -558,7 +564,7 @@ torch==2.8.0 ; python_full_version < '3.10'
     # via
     #   linear-operator
     #   vanguard-gp
-torch==2.12.0 ; python_full_version >= '3.10'
+torch==2.12.1 ; python_full_version >= '3.10'
     # via
     #   linear-operator
     #   vanguard-gp
@@ -566,7 +572,7 @@ tornado==6.5.7
     # via
     #   ipykernel
     #   jupyter-client
-tqdm==4.68.2
+tqdm==4.68.3
     # via vanguard-gp
 traitlets==5.15.1
     # via
@@ -581,7 +587,7 @@ traitlets==5.15.1
     #   nbsphinx
 triton==3.4.0 ; python_full_version < '3.10' and platform_machine == 'x86_64' and sys_platform == 'linux'
     # via torch
-triton==3.7.0 ; (python_full_version >= '3.10' and python_full_version < '3.13' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and sys_platform == 'linux')
+triton==3.7.1 ; (python_full_version >= '3.10' and python_full_version < '3.13' and sys_platform == 'linux') or (python_full_version >= '3.10' and os_name != 'nt' and sys_platform == 'linux')
     # via torch
 typeguard==4.5.2 ; python_full_version < '3.10'
     # via jaxtyping
