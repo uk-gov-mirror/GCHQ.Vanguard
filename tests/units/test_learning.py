@@ -170,7 +170,7 @@ class TestLearning(unittest.TestCase):
 
         # Call the function and verify output
         result = _process_y_std(y_std=y_std, shape=(2, 3), dtype=torch.float, device=device)
-        torch.testing.assert_allclose(result, expected_result)
+        torch.testing.assert_close(result, expected_result)
 
     @pytest.mark.skipif(sys.version_info < (3, 12), reason="requires python3.12 or higher")
     def test_with_noise_learning(self) -> None:
