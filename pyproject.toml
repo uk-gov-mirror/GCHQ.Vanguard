@@ -7,7 +7,7 @@ name = "vanguard-gp"
 dynamic = ["version"]
 description = "Various easy-to-use extensions for Gaussian process models and a framework for composition of extensions."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 keywords = [
     "gaussian-process",
     "pytorch",
@@ -16,7 +16,6 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Programming Language :: Python",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
@@ -144,7 +143,6 @@ environments = [
     "python_version=='3.12.*'",
     "python_version=='3.11.*'",
     "python_version=='3.10.*'",
-    "python_version=='3.9.*'",
 ]
 
 [project.urls]
