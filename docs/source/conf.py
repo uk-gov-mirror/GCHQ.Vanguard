@@ -139,6 +139,11 @@ nitpicky_ignore_mapping: dict[str, list[str]] = {
     "py:class": [
         "torch.Size",
         "gpytorch.likelihoods.gaussian_likelihood._GaussianLikelihoodBase",
+        "numpy._typing._array_like.GenericAlias",
+        "numpy._typing._array_like.NDArray",
+    ],
+    "py:data": [
+        "typing.Union",
     ],
     "py:meth": [
         "activate",
@@ -230,11 +235,14 @@ def require_full_stops_on_params(
     app: sphinx.config.Sphinx,  # pylint: disable=unused-argument
     what: str,  # pylint: disable=unused-argument
     name: str,
-    obj: object,  # pylint: disable=unused-argument
+    obj: object,
     options: sphinx_autodoc_typehints.Options,  # pylint: disable=unused-argument
     lines: list[str],
 ):
     """Require full stops on `param` directives in docstrings."""
+    obj_module = getattr(obj, "__module__", "") or ""
+    if not obj_module.startswith("vanguard"):
+        return
     current_param = None  # The parameter we're currently processing
     current_param_lines = []  # The docstring lines for the parameter we're currently processing
 
