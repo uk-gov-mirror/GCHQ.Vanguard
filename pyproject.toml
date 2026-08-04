@@ -89,8 +89,8 @@ notebook = [
     "tqdm>=4",
 ]
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "vanguard-gp[test, doc, notebook]",
     "isort>=5",
     "jupyterlab>=4",
@@ -101,6 +101,7 @@ dev-dependencies = [
     "ruff>=0.6",
 ]
 
+[tool.uv]
 # Constraints on dependencies. These do *not* select a package to be installed, but if *another* package requires
 # one of these packages, then uv will respect these constraints. Note that pip does *not* respect these constraints,
 # however - they are only for ensuring that `--resolution lowest` only picks packages compatible with modern Python.
