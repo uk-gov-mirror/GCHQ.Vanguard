@@ -13,7 +13,7 @@ jobs:
     name: Build package
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           ref: ${{ inputs.branch }}
           lfs: true
@@ -22,7 +22,7 @@ jobs:
           git lfs fetch
           git lfs checkout
       - name: Set up base Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
         with:
           python-version: 3.13
       - name: Install and upgrade build tools
@@ -32,7 +32,7 @@ jobs:
       - name: Build the package
         run: python -m build --verbose --outdir $RUNNER_TEMP/dist
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a  # v7.0.1
         with:
           name: build-latest
           path: ${{ runner.temp }}/dist
@@ -68,7 +68,7 @@ jobs:
       UV_NO_SYNC: true
     steps:
       - name: Check out only the test files
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           ref: ${{ inputs.branch }}
           # Only check out the test files; this ensures we don't get any
@@ -80,7 +80,7 @@ jobs:
           # set to true, it checks out files in the repo root as well.)
           sparse-checkout-cone-mode: false
       - name: Download built package
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c  # v8.0.1
         with:
          name: build-latest
          path: ${{ runner.temp }}/dist
@@ -99,7 +99,7 @@ jobs:
       - name: Restore uv cache (read-only)
         # We don't save the cache here, as we expect this job to be run only very
         # infrequently.
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
         with:
           path: ${{ env.UV_CACHE_DIR }}
           key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}-${{ matrix.python-version }}-test

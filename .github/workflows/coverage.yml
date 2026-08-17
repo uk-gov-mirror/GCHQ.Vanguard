@@ -17,9 +17,9 @@ jobs:
       percentage_int: ${{ steps.cov.outputs.percentage_int }}
       percentage_float: ${{ steps.cov.outputs.percentage_float }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
       - name: Set up base Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97  # v7.0.0
         with:
           # Note that this is just the version of Python that we use to run `uv` with.
           # `uv` manages its own version of Python.
@@ -33,7 +33,7 @@ jobs:
         run: echo "UV_CACHE_DIR=${{ runner.temp }}/.uv-cache" >> $env:GITHUB_ENV
         if: runner.os == 'Windows'
       - name: Restore uv cache
-        uses: actions/cache@v4
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
         with:
           path: ${{ env.UV_CACHE_DIR }}
           key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}-${{ matrix.python-version }}-test
@@ -57,7 +57,7 @@ jobs:
           cat $GITHUB_OUTPUT
       - name: Check out metadata repo
         if: github.event_name == 'pull_request'
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           repository: gchq/vanguard-metadata
           # GitHub Actions require check out destination to be within vanguard/vanguard.
@@ -93,13 +93,13 @@ jobs:
     steps:
       - name: Generate a GitHub token
         id: generate-token
-        uses: actions/create-github-app-token@v1
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1  # v3.2.0
         with:
           app-id: ${{ vars.WRITE_CONTENTS_PR_APP }}
           private-key: ${{ secrets.WRITE_CONTENTS_PR_KEY }}
           repositories: vanguard-metadata
       - name: Check out metadata repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
         with:
           repository: gchq/vanguard-metadata
       - name: Generate high-precision coverage JSON
