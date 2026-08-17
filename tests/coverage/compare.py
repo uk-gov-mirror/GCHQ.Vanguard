@@ -30,9 +30,15 @@ COVERAGE_FILENAME_REGEX = re.compile(
     r"--v(\d+)\.json$"
 )
 
-# Set tolerances for reduction in coverage percentage before test fails
-ABSOLUTE_TOLERANCE = 0
-RELATIVE_TOLERANCE = 0
+# Set tolerances for reduction in coverage percentage before test fails. A PR only
+# passes this check if the drop is within *both* tolerances, so these should be picked
+# such that neither one unexpectedly becomes the binding constraint.
+# 0.5 percentage points allows for small, incidental drops (e.g. a handful of untested
+# lines in an otherwise well-tested PR) without masking a genuine regression.
+ABSOLUTE_TOLERANCE = 0.5
+# 1% relative drop, so that at lower coverage levels the absolute tolerance alone
+# doesn't permit a proportionally large regression.
+RELATIVE_TOLERANCE = 0.01
 
 # Increment this if any changes are made to the storage format! Remember to also
 # increment the corresponding value in the `coverage.yml` workflow file.
