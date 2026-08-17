@@ -120,7 +120,8 @@ class SmartOptimiser(Generic[OptimiserT]):
     ) -> Optional[Union[float, torch.Tensor]]:
         """Perform a single optimisation step."""
         step_result = self._step(loss, closure=closure)
-        self.last_n_losses.append(float(loss))
+        loss_value = loss.detach().item() if isinstance(loss, torch.Tensor) else float(loss)
+        self.last_n_losses.append(loss_value)
 
         no_improvement = self.last_n_losses[0] <= min(self.last_n_losses)
         if no_improvement:

@@ -195,7 +195,7 @@ class VariationalHierarchicalHyperparameters(BaseHierarchicalHyperparameters):
             * array_like[float]: (n_features,) The standard deviation per input dimension for the predictions,
             * float: Assume homoskedastic noise.
         """
-        tx = torch.tensor(x, dtype=torch.float32, device=controller.device)
+        tx = torch.as_tensor(x, dtype=torch.float32, device=controller.device)
         # pylint: disable-next=protected-access
         tx_std = controller._process_x_std(std=x_std).to(controller.device)
         while True:
@@ -248,7 +248,7 @@ class VariationalHierarchicalHyperparameters(BaseHierarchicalHyperparameters):
             * array_like[float]: (n_features,) The standard deviation per input dimension for the predictions,
             * float: Assume homoskedastic noise.
         """
-        tx = torch.tensor(x, dtype=torch.float32, device=controller.device)
+        tx = torch.as_tensor(x, dtype=torch.float32, device=controller.device)
         # pylint: disable-next=protected-access
         tx_std = controller._process_x_std(x_std).to(controller.device)
 

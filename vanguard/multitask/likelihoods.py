@@ -145,4 +145,4 @@ class FixedNoiseMultitaskGaussianLikelihood(MultitaskGaussianLikelihood):
 
         :returns: Reshaped 1d tensor. Contiguous within tasks.
         """
-        return noise.T.reshape(-1)
+        return noise.permute(*reversed(range(noise.ndim))).reshape(-1)

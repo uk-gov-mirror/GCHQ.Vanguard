@@ -282,7 +282,7 @@ class LaplaceHierarchicalHyperparameters(BaseHierarchicalHyperparameters):
 
         :return: Generator that provides posterior samples.
         """
-        tx = torch.tensor(x, dtype=torch.float32, device=controller.device)
+        tx = torch.as_tensor(x, dtype=torch.float32, device=controller.device)
         tx_std = controller._process_x_std(x_std).to(controller.device)  # pylint: disable=protected-access
         while True:
             # pylint: disable-next=protected-access

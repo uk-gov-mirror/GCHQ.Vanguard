@@ -79,4 +79,5 @@ class ApplyLearningRateScheduler(Generic[LRSchedulerT]):
 
     @staticmethod
     def _step_scheduler_with_loss(scheduler: LRSchedulerT, loss: Union[float, torch.Tensor]) -> None:
-        scheduler.step(loss)
+        loss_value = loss.detach() if isinstance(loss, torch.Tensor) else loss
+        scheduler.step(loss_value)

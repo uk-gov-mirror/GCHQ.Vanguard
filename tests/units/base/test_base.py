@@ -391,7 +391,8 @@ class NLLTests(unittest.TestCase):
 
 class TestBatchMode:
     @pytest.fixture(scope="class")
-    def dataset(self):
+    @classmethod
+    def dataset(cls):
         """Return a dataset for testing."""
         return SyntheticDataset(n_train_points=10, n_test_points=10, rng=get_default_rng())
 

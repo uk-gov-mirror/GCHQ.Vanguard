@@ -114,18 +114,14 @@ class BaseGPController:
         """Initialise self."""
         self.rng = utils.optional_random_generator(rng)
 
-        if train_x.ndim == 1:
-            self.train_x = torch.tensor(train_x, dtype=self.dtype, device=self.device).unsqueeze(1)
-        else:
-            self.train_x = torch.tensor(train_x, dtype=self.dtype, device=self.device)
+        train_x = torch.as_tensor(train_x, dtype=self.dtype, device=self.device)
+        self.train_x = train_x.unsqueeze(1) if train_x.ndim == 1 else train_x
 
         # We don't set the dtype for targets, since for continuous problems they will be floats, but for classification
         # problems they will be integers
         y_dtype = torch.int if torch.as_tensor(train_y).dtype == torch.int else torch.float
-        if train_y.ndim == 1:
-            self.train_y = torch.tensor(train_y, dtype=y_dtype, device=self.device).unsqueeze(1)
-        else:
-            self.train_y = torch.tensor(train_y, dtype=y_dtype, device=self.device)
+        train_y = torch.as_tensor(train_y, dtype=y_dtype, device=self.device)
+        self.train_y = train_y.unsqueeze(1) if train_y.ndim == 1 else train_y
 
         # pylint: disable-next=invalid-name
         self.N, self.dim, *_ = self.train_x.shape
