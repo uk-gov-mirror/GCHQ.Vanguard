@@ -17,7 +17,7 @@ Tests for the GPController class.
 """
 
 import unittest
-from typing import Callable, Union
+from collections.abc import Callable
 
 import gpytorch
 import numpy as np
@@ -211,7 +211,7 @@ class NLLTests(unittest.TestCase):
                 function: Callable,
                 num_train_points: int,
                 num_test_points: int,
-                y_std: Union[float, NDArray[np.floating]],
+                y_std: float | NDArray[np.floating],
                 rng: np.random.Generator,
             ) -> None:
                 self.rng = rng
@@ -343,10 +343,10 @@ class NLLTests(unittest.TestCase):
 
     @staticmethod
     def predictive_nll(
-        mean: Union[np.typing.NDArray[np.floating], Tensor],
-        variance: Union[np.typing.NDArray[np.floating], Tensor],
-        noise_variance: Union[np.typing.NDArray[np.floating], Tensor, float],
-        y: Union[np.typing.NDArray[np.floating], Tensor],
+        mean: np.typing.NDArray[np.floating] | Tensor,
+        variance: np.typing.NDArray[np.floating] | Tensor,
+        noise_variance: np.typing.NDArray[np.floating] | Tensor | float,
+        y: np.typing.NDArray[np.floating] | Tensor,
     ) -> float:
         """
         Get the mean negative log-likelihood, for testing purposes.
@@ -372,7 +372,7 @@ class NLLTests(unittest.TestCase):
 
     @staticmethod
     def predictive_mse(
-        mu_pred: Union[np.typing.NDArray[np.floating], Tensor], y: Union[np.typing.NDArray[np.floating], Tensor]
+        mu_pred: np.typing.NDArray[np.floating] | Tensor, y: np.typing.NDArray[np.floating] | Tensor
     ) -> float:
         """
         Get the mean squared error, for testing purposes.

@@ -16,8 +16,6 @@
 Basic end to end functionality test for distributed decorators in Vanguard.
 """
 
-from typing import Union
-
 import numpy as np
 import pytest
 from _pytest.fixtures import FixtureRequest
@@ -53,7 +51,7 @@ from vanguard.kernels import ScaledRBFKernel
 from vanguard.vanilla import GaussianGPController
 from vanguard.variational import VariationalInference
 
-TrainTestData = Union[tuple[NDArray, NDArray, NDArray, NDArray], tuple[Tensor, Tensor, Tensor, Tensor]]
+TrainTestData = tuple[NDArray, NDArray, NDArray, NDArray] | tuple[Tensor, Tensor, Tensor, Tensor]
 
 
 class TestDistributeUsage:

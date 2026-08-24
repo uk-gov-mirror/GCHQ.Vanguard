@@ -18,7 +18,7 @@ Tests for learning functionality that is not covered elsewhere.
 
 import sys
 import unittest
-from typing import Any, Optional
+from typing import Any
 from unittest.mock import patch
 
 import numpy as np
@@ -66,7 +66,7 @@ class AlteredDirichletClassificationLikelihoodExpectedError(DirichletClassificat
         self,
         targets: torch.Tensor,
         alpha_epsilon: float = 0.01,
-        learn_additional_noise: Optional[bool] = False,
+        learn_additional_noise: bool | None = False,
         batch_shape: torch.Size = torch.Size(),
         dtype: torch.dtype = torch.float,
         **kwargs: Any,
@@ -98,7 +98,7 @@ class AlteredDirichletClassificationLikelihoodUnexpectedError(DirichletClassific
         self,
         targets: torch.Tensor,
         alpha_epsilon: float = 0.01,
-        learn_additional_noise: Optional[bool] = False,
+        learn_additional_noise: bool | None = False,
         batch_shape: torch.Size = torch.Size(),
         dtype: torch.dtype = torch.float,
         **kwargs: Any,

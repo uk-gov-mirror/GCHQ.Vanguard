@@ -27,7 +27,7 @@ import os
 import re
 import shutil
 import sys
-from typing import Any, Optional, TypeVar
+from typing import Any, TypeAlias, TypeVar
 
 import gpytorch.constraints
 import gpytorch.distributions
@@ -44,7 +44,7 @@ import torch
 import torch.optim
 from PIL import Image
 from sphinx_autodoc_typehints import format_annotation as default_format_annotation
-from typing_extensions import Self, TypeAlias, Unpack
+from typing_extensions import Self, Unpack
 
 # -- Path setup --------------------------------------------------------------
 
@@ -190,7 +190,7 @@ autodoc_custom_types: dict[TypeAlias, str] = {
 }
 
 
-def typehints_formatter(annotation: Any, config: sphinx.config.Config) -> Optional[str]:
+def typehints_formatter(annotation: Any, config: sphinx.config.Config) -> str | None:
     """
     Properly replace custom type aliases.
 

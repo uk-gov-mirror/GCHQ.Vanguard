@@ -16,8 +16,6 @@
 Basic end to end functionality test for hierarchical code in Vanguard.
 """
 
-from typing import Union
-
 import numpy as np
 import pytest
 import torch
@@ -36,7 +34,7 @@ from vanguard.hierarchical import (
 from vanguard.hierarchical.base import BaseHierarchicalHyperparameters
 from vanguard.vanilla import GaussianGPController
 
-TrainTestData = Union[tuple[NDArray, NDArray, NDArray, NDArray], tuple[Tensor, Tensor, Tensor, Tensor]]
+TrainTestData = tuple[NDArray, NDArray, NDArray, NDArray] | tuple[Tensor, Tensor, Tensor, Tensor]
 
 
 class TestHierarchicalUsage:
