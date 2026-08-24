@@ -39,7 +39,7 @@ dependencies = [
     "matplotlib>=3.8.4",  # first version to support numpy 2
     "numpy>=2",  # modern versions of packages are incompatible with numpy<2
     "numpy>=2.1.0; python_version>='3.13'",  # first version to support python 3.13
-    "pandas>=2",
+    "pandas>=2.2.0",
     "pandas>=2.2.3; python_version>='3.13'",  # earlier versions don't provide prebuilt wheels for python 3.13
     "scikit-learn>=1.5.0",  # CVE-2024-5206 affects versions earlier than 1.5.0
     "scikit-learn>=1.6.0; python_version>='3.13'",  # earlier versions don't provide prebuilt wheels for python 3.13
