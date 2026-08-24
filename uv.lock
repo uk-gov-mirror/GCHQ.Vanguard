@@ -65,6 +65,7 @@ constraints = [
     { name = "pywin32", marker = "python_full_version >= '3.13'", specifier = ">=307" },
     { name = "pywinpty", marker = "python_full_version >= '3.13'", specifier = ">=2.0.14" },
     { name = "pyzmq", specifier = ">=26" },
+    { name = "pyzmq", marker = "python_full_version >= '3.13'", specifier = ">=26.1.0" },
     { name = "six", marker = "python_full_version >= '3.10'", specifier = ">=1.16" },
     { name = "sympy", specifier = ">=1.5" },
     { name = "wcwidth", specifier = ">=0.2" },
