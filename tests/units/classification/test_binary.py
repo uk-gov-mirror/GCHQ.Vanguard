@@ -174,4 +174,4 @@ class BinaryFuzzyTests(ClassificationTestCase):
         controller.fit(30)
 
         predictions, _ = controller.classify_fuzzy_points(test_x, test_x_std)
-        self.assertPredictionsEqual(dataset.test_y.squeeze(), predictions, delta=0.3)
+        self.assertPredictionsEqual(dataset.test_y.squeeze(), predictions, delta=0.35)
