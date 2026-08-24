@@ -70,6 +70,7 @@ jobs:
       run: >
         uv run pytest
         --ignore=tests/test_examples.py
+        -x
         -W "error::vanguard.utils.UnseededRandomWarning"
         -m "not no_beartype"
         --beartype-packages="vanguard"
