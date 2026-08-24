@@ -19,7 +19,6 @@ Tests for the Multitask kernel class.
 import unittest
 
 import gpytorch
-import pytest
 import torch
 from linear_operator.operators import KroneckerProductLinearOperator
 

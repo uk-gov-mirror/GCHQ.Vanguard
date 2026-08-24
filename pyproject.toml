@@ -37,6 +37,7 @@ dependencies = [
     "kmedoids>=0.4.4; python_version>='3.12'",  # earlier versions don't have prebuilt wheels for python 3.12
     "kmedoids>=0.5.3; python_version>='3.13'",  # earlier versions don't have prebuilt wheels for python 3.13
     "matplotlib>=3.8.4",  # first version to support numpy 2
+    "matplotlib>=3.9.2; python_version>='3.13'",  # first version to ship pre-built python 3.13 wheels
     "numpy>=2",  # modern versions of packages are incompatible with numpy<2
     "numpy>=2.1.0; python_version>='3.13'",  # first version to support python 3.13
     "pandas>=2.2.0",
